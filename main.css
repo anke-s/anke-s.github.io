@@ -1,6 +1,6 @@
 html {
-  --hover-width-left: 65%;
-  --other-width-right: 35%;
+  --hover-width-left: 50%;
+  --other-width-right: 50%;
   --hover-width-right: 80%;
   --other-width-left: 20%;
   --speed: 800ms;  --container-bg-color: #333;
