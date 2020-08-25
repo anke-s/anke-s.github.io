@@ -1,6 +1,8 @@
 html {
-  --hover-width: 75%;
-  --other-width: 25%;
+  --hover-width-left: 65%;
+  --other-width-right: 35%;
+  --hover-width-right: 80%;
+  --other-width-left: 20%;
   --speed: 1000ms;  --container-bg-color: #333;
   --left-bg-color: #FFDC6E;
   --left-button-hover-color: rgba(161, 11, 11, 0.3);
@@ -8,13 +10,13 @@ html {
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
 }
 body {
-  font-family: Arial;
+  font-family: "Century Gothic";
   color: white;
 }
 
 .split {
   height: 100%;
-  width: 50%;
+  width: 25%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -30,13 +32,14 @@ body {
 
 .right {
   right: 0;
+  width:75%;
   background-color:#BFD7ED;
   ;
 }
 
 .centered {
   position: relative;
-  top: 25%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -73,19 +76,19 @@ split.split.left:before {
   transition: var(--speed) all ease-in-out;
 }
 .hover-left .split.left {
-  width: var(--hover-width);
+  width: var(--hover-width-left);
 }
 .hover-left .split.right {
-  width: var(--other-width);
+  width: var(--other-width-right);
 }
 .hover-left .right:before {
   z-index: 2;
 }
 .hover-right .split.right {
-  width: var(--hover-width);
+  width: var(--hover-width-right);
 }
 .hover-right .split.left {
-  width: var(--other-width);
+  width: var(--other-width-left);
 }
 .hover-right .left:before {
   z-index: 2;
@@ -111,7 +114,7 @@ position:relative;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #BFD7ED;
 }
 
 .project:hover .overlay {
@@ -131,28 +134,31 @@ position:relative;
 }
 /***/
 .grid { 
+  right: 0;
+  width:100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill,300px); /*  minmax(300px, 1fr) instead of just 300px*/
+  grid-template-columns: repeat(auto-fill, 300px); /*  minmax(300px, 1fr) instead of just 300px*/
   grid-gap: 20px;
   align-items: stretch;
   }
 .grid img{
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border: 1px solid rgb(139, 201, 236);
   max-width: 100%;
   max-height: 100%;
 }
 .button {
+  line-height: 0;
   background: transparent;
   border: none !important;
-  padding: 16px 16px;
+  padding-right: 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 150%;
   margin: 1px 1px;
   transition-duration: 0.4s;
   cursor: pointer;
+  color: rgb(139, 201, 236)
 }
 
 #outer
@@ -164,3 +170,41 @@ position:relative;
 {
     display: inline-block;
 }
+.description
+{
+  width:100%;
+  text-align: center;
+  
+}
+
+.intro 
+{
+  font-size: 130%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(90, 147, 212); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(84, 100, 143); 
+}
+
+div.name {
+  top: 50px;
+  font-size: 250%;
+}
+
+h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
