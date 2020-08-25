@@ -91,6 +91,9 @@ split.split.left:before {
   z-index: 2;
 }
 
+.project {
+position:relative;
+}
 
 .image {
   display: block;
@@ -98,7 +101,7 @@ split.split.left:before {
   height: auto;
 }
 
-.overlay {
+.project .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -111,7 +114,7 @@ split.split.left:before {
   background-color: #008CBA;
 }
 
-.centered:hover .overlay {
+.project:hover .overlay {
   opacity: 1;
 }
 
@@ -133,8 +136,9 @@ split.split.left:before {
   grid-gap: 20px;
   align-items: stretch;
   }
-.grid img {
+.grid img{
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
+  max-height: 100%;
 }
