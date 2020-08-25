@@ -3,7 +3,7 @@ html {
   --other-width-right: 35%;
   --hover-width-right: 80%;
   --other-width-left: 20%;
-  --speed: 1000ms;  --container-bg-color: #333;
+  --speed: 800ms;  --container-bg-color: #333;
   --left-bg-color: #FFDC6E;
   --left-button-hover-color: rgba(161, 11, 11, 0.3);
   --right-bg-color: #F5E1F4;
@@ -206,5 +206,7 @@ div.name {
   top: 50px;
   font-size: 250%;
 }
+
+
 
 h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
