@@ -4,28 +4,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
 <div class="container">
+	<div class="centered">
+		<img src="images/eggdog.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
 	<div class="split left">
 	<div class="centered">
-		<img src="img_avatar2.png" alt="Avatar woman">
-		<h2>Jane Flex</h2>
+		<img src="images/eggdog.png" alt="Avatar woman">
+		<h2>Anke Shao</h2>
 		<p>Some text.</p>
 	</div>
 	</div>
 
 	<div class="split right">
-	<div class="centered">
-		<img src="img_avatar.png" alt="Avatar man">
-		<h2>John Doe</h2>
-		<p>Some text here too.</p>
-	</div>
+		<main class="grid">
+			<div class ="project">
+				<img src="images/eggdog.png" alt="Sample photo" class="image">
+				<div class="overlay">
+					<div class="text">Hello World</div>
+				</div>
+			</div>
+			<img src="images/eggdog.png" alt="Sample photo" class="image">
+			<div class="overlay">
+				<div class="text">Hello World</div>
+			  </div>
+			<img src="images/eggdog.png" alt="Sample photo" class="image">
+			<div class="overlay">
+				<div class="text">Hello World</div>
+			  </div>
+			<img src="images/eggdog.png" alt="Sample photo" class="image">
+			<img src="images/eggdog.png" alt="Sample photo" class="image">
+			<img src="images/eggdog.png" alt="Sample photo" class="image">
+		  </main>
 	</div>
 </div>
 
 </head>
 <body>
 
+	
 	<script> 
-		console.log("HI");
 		const left = document.querySelector(".split.left");
 		const right = document.querySelector(".split.right");
 		const container = document.querySelector(".container");
@@ -42,6 +62,7 @@
 		  container.classList.remove("hover-right");
 		});
 		</script>
+		
 </body>
 </html> 
 
